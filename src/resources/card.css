@@ -1,0 +1,15 @@
+.ant-card-meta-description {
+  font-size: 16px !important;
+  color: rgb(0 0 0 / 68%) !important;
+  text-transform: capitalize;
+}
+.ant-card-meta-title {
+  font-size: 22px !important;
+}
+
+.ant-spin-spinning {
+  display: block !important;
+}
+.ant-card-cover > * {
+  height: 180px !important;
+}

@@ -1,0 +1,23 @@
+.login-background {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url(../assets/bg.jpg); */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-image: url(../assets/bg.svg);
+}
+
+.card {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 767px) {
+  .card {
+    width: 90%;
+  }
+}

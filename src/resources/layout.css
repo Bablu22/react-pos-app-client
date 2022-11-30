@@ -1,0 +1,123 @@
+.ant-menu {
+  padding-top: 16px !important;
+  padding-right: 10px !important;
+}
+
+.ant-menu li {
+  border-radius: 5px !important;
+  margin-bottom: 14px !important;
+}
+
+.anticon {
+  height: 20px !important;
+  width: 20px !important;
+  font-size: 20px !important;
+  margin-left: 13px;
+}
+.anticon-menu-fold,
+.anticon-menu-unfold {
+  color: white !important;
+}
+.ant-menu-title-content a {
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+.ant-menu-item-icon {
+  color: gray !important;
+}
+.ant-menu-item-selected .ant-menu-item-icon {
+  color: white !important;
+}
+
+.ant-layout-content {
+  height: 100vh !important;
+  margin: 24px 16px !important;
+  padding: 24 !important;
+  height: 100% !important;
+}
+
+.ant-layout-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.ant-badge {
+  margin-right: 20px !important;
+  cursor: pointer;
+}
+
+.ant-badge-count {
+  top: 6px !important;
+}
+.anticon-delete,
+.anticon-plus-circle,
+.anticon-minus-circle,
+.anticon-edit,
+.anticon-upload,
+.ant-modal-close-icon {
+  color: black !important;
+  cursor: pointer;
+}
+.ant-modal-close-icon {
+  margin-left: 0 !important;
+  color: black !important;
+  cursor: pointer;
+}
+
+.ant-table-cell img {
+  border-radius: 5px !important;
+}
+.ant-upload-list-item-error {
+  border-color: black !important;
+}
+.ant-upload-list-item-error .ant-upload-list-item-name {
+  color: black !important;
+}
+
+.anticon .anticon-exclamation-circle {
+  color: "red" !important;
+}
+
+.anticon-message-success {
+  color: "green" !important;
+}
+.ant-segmented {
+  background-color: teal;
+  padding: 10px 40px !important;
+  margin-bottom: 20px !important;
+}
+
+.ant-segmented-item {
+  font-weight: bold;
+  color: black !important;
+  margin-right: 16px;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 19px;
+  font-weight: bold;
+  font-size: 10px !important;
+}
+
+.ant-layout-content {
+  height: 100vh !important;
+}
+
+/* Smartphone Only */
+@media all and (max-width: 767px) {
+  .ant-segmented {
+    padding: 10px 5px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    overflow: scroll !important;
+  }
+  .ant-segmented-item {
+    margin-right: 0px !important;
+  }
+}
