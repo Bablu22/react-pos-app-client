@@ -12,7 +12,7 @@ function Home() {
 
     useEffect(() => {
         axios
-            .get("/api/v1/items")
+            .get("https://pos-app-server.onrender.com/api/v1/items")
             .then((res) => {
                 setItems(res.data);
                 setLoading(false);

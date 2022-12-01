@@ -103,7 +103,7 @@ function CartPage() {
         };
         setLoading(true);
         axios
-            .post("/api/v1/bill", data)
+            .post("https://pos-app-server.onrender.com/api/v1/bill", data)
             .then((res) => {
                 setLoading(false);
                 message.success("Bill charged success");

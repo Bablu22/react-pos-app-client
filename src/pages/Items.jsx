@@ -31,7 +31,7 @@ function Items() {
 
     const getItems = () => {
         axios
-            .get("/api/v1/items")
+            .get("https://pos-app-server.onrender.com/api/v1/items")
             .then((res) => {
                 setItems(res.data);
                 setLoading(false);
@@ -41,7 +41,7 @@ function Items() {
 
     const handleDelete = (record) => {
         axios
-            .delete(`/api/v1/items/${record._id}`)
+            .delete(`https://pos-app-server.onrender.com/api/v1/items/${record._id}`)
             .then((res) => {
                 message.success("Item deleted success");
                 getItems();
@@ -122,7 +122,7 @@ function Items() {
             const { name, price, category } = value;
             if (name && price && category && image) {
                 axios
-                    .post("/api/v1/items", value)
+                    .post("https://pos-app-server.onrender.com/api/v1/items", value)
                     .then((res) => {
                         message.success("Item added success");
                         setBtnLoad(false);
@@ -136,7 +136,7 @@ function Items() {
             }
         } else {
             axios
-                .patch("/api/v1/items", { ...value, itemId: editItem._id })
+                .patch("https://pos-app-server.onrender.com/api/v1/items", { ...value, itemId: editItem._id })
                 .then((res) => {
                     message.success("Item update success");
                     setBtnLoad(false);

@@ -18,7 +18,7 @@ function Login() {
 
     const onFinish = (values) => {
         axios
-            .post("/api/v1/auth/login", values)
+            .post("https://pos-app-server.onrender.com/api/v1/auth/login", values)
             .then((res) => {
                 message.success("User login success");
                 localStorage.setItem("pos-user", JSON.stringify(res.data));

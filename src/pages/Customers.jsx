@@ -11,7 +11,7 @@ function Customers() {
     useEffect(() => {
         setLoading(true);
         axios
-            .get("/api/v1/bill")
+            .get("https://pos-app-server.onrender.com/api/v1/bill")
             .then((res) => {
                 setLoading(false);
                 setBills(res.data);
